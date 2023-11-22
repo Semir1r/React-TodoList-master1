@@ -1,0 +1,15 @@
+apiVersion: app/v1
+kind: Deployment
+metadata:
+name : React-TodoList-master1
+replicas: 3
+app: React-TodoList-master1
+template:
+labels:
+app: React-TodoList-master1 
+spec:
+containers:
+name: React-TodoList-master1
+image: none 
+ports :
+containerport: 8080
